@@ -1,4 +1,5 @@
 {% extends "main/layout.html" %}
+{% load static %}
 {% block content %}
   <div class="home bg-grey">
     <div id="carouselExampleCaptions" class="carousel slide mb-5" data-ride="carousel" style="height: 500px;">
@@ -9,16 +10,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../media/garantisado.jpg" class="d-block w-100" alt="sushi1" height="500px">
+            <img src="{% static 'media/garantisado.jpg' %}" class="d-block w-100" alt="sushi1" height="500px">
             <div class="carousel-caption d-none d-md-block text-dark">
               <h1 style="color: yellow">Small-Gate Foods</h1>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../media/manamit.jpg" class="d-block w-100" alt="sushi2" height="500px">
+            <img src="{% static 'media/manamit.jpg' %}" class="d-block w-100" alt="sushi2" height="500px">
           </div>
           <div class="carousel-item">
-            <img src="../media/saburuso.jpg" class="d-block w-100" alt="sushi3" height="500px">
+            <img src="{% static 'media/saburuso.jpg' %}" class="d-block w-100" alt="sushi3" height="500px">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
